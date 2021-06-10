@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('main');
-})->name('main');
+Route::get('/','PageController@index')->name('main');
 
-Route::get('/contatti', function () {
-    return view('contatti');
-})->name('contatti');
+Route::get('/contatti', 'PageController@contatti')->name('contatti');
+
+Route::get('/voyages', 'VoyageController@index')->name('voyages');
