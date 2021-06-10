@@ -23,6 +23,9 @@
                     <li>
                         <a href="{{ route('contatti')}}">CONTATTI</a>
                     </li>
+                    <li>
+                        <a href="{{ route('voyages')}}">Voyages</a>
+                    </li>
                 </ul>
             </nav>
 
