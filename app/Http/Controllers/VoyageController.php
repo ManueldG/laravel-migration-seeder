@@ -9,7 +9,8 @@ class VoyageController extends Controller
 {
     public function index(){
         $voyages = Voyage::all();
-        dump($voyages);
-        return view('voyages');
+        //dump($voyages);
+
+        return view('voyages',compact('voyages'));
     }
 }
