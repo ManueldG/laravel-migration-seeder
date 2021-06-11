@@ -19,7 +19,8 @@ class VoyagesTableSeeder extends Seeder
             $new_voyage->price = 1000;
             $new_voyage->place = 'Hotel';
             $new_voyage->treatment = 'Full';
-            $new_voyage->description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, natus beatae dolorem minus illum voluptatum eius voluptatem debitis consequuntur delectus quis. Vero neque soluta voluptate tempora suscipit illum, sequi corporis?';
+            $new_voyage->description = 'Lorem ipsum dolor sit amet ';
+            $new_voyage->save();
 
             /*$table->id();
             $table->string('location',50);
